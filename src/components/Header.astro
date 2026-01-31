@@ -1,0 +1,37 @@
+---
+const navItems = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Platform', href: '/platform' },
+  { name: 'Safety', href: '/safety' },
+  { name: 'Contact', href: '/contact' },
+];
+---
+
+<header class="sticky top-0 z-50 w-full border-b border-stone-200 bg-white/90 backdrop-blur-md">
+  <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+    <a href="/" class="flex items-center gap-3 font-bold text-stone-900 transition hover:opacity-80">
+      <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-600 text-white shadow-lg shadow-teal-600/20">
+        <span class="text-xl">🧠</span>
+      </div>
+      <span class="text-xl tracking-tight font-display">C-Mind</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex md:gap-10">
+      {navItems.map((item) => (
+        <a 
+          href={item.href}
+          class="text-sm font-medium text-stone-600 transition hover:text-teal-700"
+        >
+          {item.name}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden p-2 text-stone-600">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </div>
+</header>

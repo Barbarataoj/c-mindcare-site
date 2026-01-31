@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 interface Props {
   title: string;
 }
@@ -7,144 +10,27 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth antialiased">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <strong>🧠 C-Mind</strong>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/platform">Platform</a>
-        <a href="/safety">Safety</a>
-        <a href="/contact">Contact</a>
-      </nav>
-    </header>
-    <main>
+  <body class="flex min-h-screen flex-col bg-white font-sans text-gray-900">
+    <Header />
+    <main class="flex-auto">
       <slot />
     </main>
-    <footer>
-      <p>&copy; 2026 C-Mind. All rights reserved.</p>
-    </footer>
+    <Footer />
   </body>
 </html>
 
 <style is:global>
+  /* Use Tailwind directives or keep basic resets if needed */
   :root {
     --primary: #2fb7ad;
-    --primary-soft: #eafaf8;
-    --border: #dbecec;
-    --text-main: #1f2937;
-    --text-muted: #6b7280;
-    --bg-page: #ffffff;
-  }
-
-  body {
-    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    margin: 0;
-    color: var(--text-main);
-    background: var(--bg-page);
-    line-height: 1.6;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem 2rem;
-    border-bottom: 1px solid var(--border);
-    background: white;
-  }
-
-  header strong {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-weight: 600;
-  }
-
-  nav a {
-    margin-right: 1.5rem;
-    text-decoration: none;
-    color: var(--text-main);
-    font-weight: 500;
-  }
-
-  nav a:last-child {
-    margin-right: 0;
-  }
-
-  main {
-    max-width: 1200px;
-    margin: auto;
-  }
-
-  section {
-    padding: 4rem 2rem;
-  }
-
-  .hero {
-    background: linear-gradient(
-      180deg,
-      #f0fdfa 0%,
-      #ffffff 70%
-    );
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 2px solid var(--primary);
-  }
-
-  h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .muted {
-    color: var(--text-muted);
-  }
-
-  .cta {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 0.75rem 1.75rem;
-    background: var(--primary);
-    color: white;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .card {
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 1.75rem;
-    background: white;
-  }
-
-  .grid {
-    display: grid;
-    gap: 1.75rem;
-  }
-
-  .grid-3 {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  }
-
-  footer {
-    border-top: 1px solid var(--border);
-    padding: 2rem;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    text-align: center;
   }
 </style>

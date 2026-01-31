@@ -2,30 +2,35 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Platform | C-Mind">
-  <section class="hero">
-    <h1>The C-Mind Platform</h1>
-    <p class="muted" style="max-width: 720px;">
-      The C-Mind platform uses carefully governed artificial intelligence to
-      support mental health engagement while prioritizing safety, transparency,
-      and clinical alignment.
-    </p>
-  </section>
-
-  <section>
-    <h2>How It Works</h2>
-    <p style="max-width: 720px;">
-      The platform is designed to deliver structured, evidence-informed interactions
-      that adapt to user needs over time, while maintaining clear boundaries
-      regarding diagnosis and treatment.
-    </p>
-  </section>
-
-  <section>
-    <h2>Deployment & Integration</h2>
-    <p style="max-width: 720px;">
-      C-Mind is intended for use in research, pilot, and care-support settings,
-      with configurations that allow integration into existing workflows when
-      appropriate.
-    </p>
-  </section>
+  <div class="overflow-hidden bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pr-8 lg:pt-4">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-teal-600">Technology</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">The C-Mind Platform</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              The C-Mind platform uses carefully governed artificial intelligence to support mental health engagement while prioritizing safety, transparency, and clinical alignment.
+            </p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-gray-900">
+                  <span class="absolute left-1 top-1 h-5 w-5 text-teal-600 text-lg">⚙️</span>
+                  How It Works
+                </dt>
+                <dd class="inline ml-2">The platform is designed to deliver structured, evidence-informed interactions that adapt to user needs over time, while maintaining clear boundaries regarding diagnosis and treatment.</dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-gray-900">
+                  <span class="absolute left-1 top-1 h-5 w-5 text-teal-600 text-lg">🏥</span>
+                  Deployment & Integration
+                </dt>
+                <dd class="inline ml-2">C-Mind is intended for use in research, pilot, and care-support settings, with configurations that allow integration into existing workflows when appropriate.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayout>

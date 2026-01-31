@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 
+import tailwind from '@astrojs/tailwind';
+
 export default defineConfig({
-  // Add configuration options here
+  integrations: [tailwind()]
 });

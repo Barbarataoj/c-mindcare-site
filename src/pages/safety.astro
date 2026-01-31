@@ -2,29 +2,41 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Safety & Responsibility | C-Mind">
-  <section class="hero">
-    <h1>Safety & Responsibility</h1>
-    <p class="muted" style="max-width: 720px;">
-      Safety and responsible use are foundational to the design of C-Mind.
-      The platform is not a replacement for professional mental health care,
-      diagnosis, or treatment.
-    </p>
-  </section>
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-base font-semibold leading-7 text-teal-600">Core Values</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Safety & Responsibility</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          Safety and responsible use are foundational to the design of C-Mind. The platform is not a replacement for professional mental health care, diagnosis, or treatment.
+        </p>
+      </div>
 
-  <section>
-    <h2>Built-in Safeguards</h2>
-    <p style="max-width: 720px;">
-      C-Mind incorporates safeguards intended to identify situations where
-      additional human or clinical support may be needed, including escalation
-      pathways for crisis or high-risk scenarios.
-    </p>
-  </section>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+          
+          <div class="flex flex-col">
+            <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+              <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600 text-2xl text-white">🛡️</span>
+              Built-in Safeguards
+            </dt>
+            <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+              <p class="flex-auto">C-Mind incorporates safeguards intended to identify situations where additional human or clinical support may be needed, including escalation pathways for crisis or high-risk scenarios.</p>
+            </dd>
+          </div>
 
-  <section>
-    <h2>Ethical & Responsible AI</h2>
-    <p style="max-width: 720px;">
-      The platform is developed with attention to ethical AI principles, data
-      protection, and appropriate use within healthcare and research environments.
-    </p>
-  </section>
+          <div class="flex flex-col">
+            <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+              <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600 text-2xl text-white">⚖️</span>
+              Ethical & Responsible AI
+            </dt>
+            <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+              <p class="flex-auto">The platform is developed with attention to ethical AI principles, data protection, and appropriate use within healthcare and research environments.</p>
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+    </div>
+  </div>
 </BaseLayout>
