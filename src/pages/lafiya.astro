@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Cloud version URL
+const lafiyaCloudUrl = 'https://c-mindcare.com/lafiya-cloud'; // Adjust as needed
+// APK Download URL (Google Cloud Storage)
+const apkDownloadUrl = 'https://storage.googleapis.com/lafiya-releases/Lafiya.apk'; // Adjust as needed
+---
+
+<BaseLayout title="Lafiya AI | Nigeria's Clinical Decision Support for Primary Care">
+  <main class="w-full">
+    <!-- Hero Section -->
+    <section class="bg-green-900 text-white py-20 px-6 sm:px-12 lg:px-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            Lafiya AI: Nigeria's Clinical Decision Support for <span class="text-green-400">Primary Care</span>
+          </h1>
+          <p class="text-lg md:text-xl text-green-100 max-w-2xl leading-relaxed">
+            Enhance your clinic's diagnostic accuracy with evidence-based support built for Nigeria. Access the power of Lafiya’s Knowledge Graph instantly via our cloud service, or use the tablet-optimized offline engine for unreliable network conditions.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href={lafiyaCloudUrl} 
+               class="inline-flex justify-center items-center px-8 py-4 text-base font-bold rounded-lg text-green-900 bg-white hover:bg-green-50 transition-colors shadow-lg">
+              Use Lafiya Online Now
+            </a>
+            
+            <a href={apkDownloadUrl} 
+               class="inline-flex justify-center items-center px-8 py-4 text-base font-medium rounded-lg text-white border-2 border-green-400 hover:bg-green-800 transition-colors">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              </svg>
+              Download for Android (.apk)
+            </a>
+          </div>
+          
+          <p class="text-sm text-green-300">
+            For the offline APK, ensure you <a href="#install-guide" class="underline hover:text-white">allow apps from unknown sources</a>.
+          </p>
+        </div>
+        
+        <!-- Hero Graphic (Placeholder for the Split-screen screenshot) -->
+        <div class="relative bg-green-800 rounded-2xl shadow-2xl p-4 overflow-hidden aspect-video flex items-center justify-center border border-green-700">
+            <div class="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-600/20 z-0"></div>
+            <p class="text-green-200 font-medium z-10 text-center px-6">
+               [Hero Graphic]<br/>
+               <span class="text-sm">High-quality split-screen showing Cloud Dashboard / Tablet App</span>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="py-20 px-6 sm:px-12 lg:px-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">How Lafiya Works</h2>
+        <p class="text-lg text-gray-600 mb-16 max-w-3xl mx-auto">
+          A streamlined 3-step workflow designed specifically for rapid assessment and evidence-based treatment in resource-constrained environments.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <!-- Step 1 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-left hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-green-100 text-green-700 rounded-lg flex items-center justify-center text-xl font-bold mb-6">1</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Intake</h3>
+            <p class="text-gray-600">Gather patient vitals and symptoms rapidly using the intuitive, optimized interface designed for quick clinic visits.</p>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-left hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-green-100 text-green-700 rounded-lg flex items-center justify-center text-xl font-bold mb-6">2</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Diagnose</h3>
+            <p class="text-gray-600">Lafiya's AI engine instantly cross-references symptoms against the Knowledge Graph to suggest evidence-based differentials aligned with Nigerian parameters.</p>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-left hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-green-100 text-green-700 rounded-lg flex items-center justify-center text-xl font-bold mb-6">3</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Treat</h3>
+            <p class="text-gray-600">Review contextual recommendations based directly on the Nigerian Standing Orders (NSO) treatment guidelines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offline Guide Section -->
+    <section id="install-guide" class="py-16 px-6 sm:px-12 lg:px-24 bg-white border-t border-gray-200">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Installing the Offline Application</h2>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+            <p class="text-gray-700 mb-4">Because the Lafiya Android app is distributed directly to clinics rather than through the Google Play Store, you will need to allow "Unknown Sources" before installing the downloaded `.apk` file.</p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                <li>Download the `Lafiya.apk` file using the button above to your Android tablet.</li>
+                <li>Tap the downloaded file to begin installation. If prompted that the app is from an unknown source, tap <strong>Settings</strong>.</li>
+                <li>Toggle the switch to <strong>Allow from this source</strong>, then tap the back button and click <strong>Install</strong>.</li>
+            </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
