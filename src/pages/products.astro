@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Products | C-Mind">
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-4xl font-extrabold tracking-tight text-stone-900 sm:text-5xl text-balance">Our Products</h2>
+        <p class="mt-4 text-xl leading-8 text-stone-600">Discover how C-Mind is empowering clinical care across different domains and environments.</p>
+      </div>
+      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        
+        <!-- C-Mind Professional -->
+        <article class="flex flex-col items-start justify-between rounded-3xl bg-stone-50 p-10 ring-1 ring-stone-900/5 transition hover:shadow-xl hover:-translate-y-1 duration-300">
+          <div class="flex items-center gap-x-4 text-xs">
+            <span class="relative z-10 rounded-full bg-teal-100 px-4 py-1.5 font-semibold text-teal-800 tracking-wide uppercase">Mental Health</span>
+          </div>
+          <div class="group relative mt-6 flex-grow">
+            <h3 class="mt-3 text-3xl font-extrabold leading-9 text-stone-900">
+              <a href="/c-mind-professional">
+                <span class="absolute inset-0"></span>
+                C-Mind Professional
+              </a>
+            </h3>
+            <p class="mt-5 text-lg leading-7 text-stone-600">A clinically integrated platform that enhances engagement, personalization, and continuity of care across healthcare systems. Guided reflection and structured interactions designed around evidence-based therapeutic principles.</p>
+          </div>
+          <div class="mt-8 border-t border-stone-200 pt-6 w-full relative">
+             <a href="/c-mind-professional" class="text-base font-semibold text-teal-700 hover:text-teal-800 inline-flex items-center gap-2">
+               Learn more about Professional 
+               <span aria-hidden="true">&rarr;</span>
+             </a>
+          </div>
+        </article>
+        
+        <!-- Lafiya AI -->
+        <article class="flex flex-col items-start justify-between rounded-3xl bg-green-50 p-10 ring-1 ring-green-900/5 transition hover:shadow-xl hover:-translate-y-1 duration-300">
+          <div class="flex items-center gap-x-4 text-xs">
+            <span class="relative z-10 rounded-full bg-green-200 px-4 py-1.5 font-semibold text-green-900 tracking-wide uppercase">Primary Care</span>
+          </div>
+          <div class="group relative mt-6 flex-grow">
+            <h3 class="mt-3 text-3xl font-extrabold leading-9 text-stone-900">
+              <a href="/lafiya">
+                <span class="absolute inset-0"></span>
+                Lafiya AI
+              </a>
+            </h3>
+            <p class="mt-5 text-lg leading-7 text-stone-600">Nigeria's offline Clinical Decision Support for Primary Care. Enhance diagnostic accuracy with evidence-based support, seamlessly cross-referencing symptoms against a Knowledge Graph optimized for low-connectivity environments.</p>
+          </div>
+          <div class="mt-8 border-t border-green-200 pt-6 w-full relative">
+             <a href="/lafiya" class="text-base font-semibold text-green-700 hover:text-green-800 inline-flex items-center gap-2">
+               Explore Lafiya AI 
+               <span aria-hidden="true">&rarr;</span>
+             </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</BaseLayout>

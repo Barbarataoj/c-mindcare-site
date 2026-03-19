@@ -1,133 +1,49 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import FeatureCard from "../components/FeatureCard.astro";
 ---
 
-<BaseLayout title="C-Mind | AI-assisted mental health care">
-
+<BaseLayout title="C-Mind | Empowering Clinical Care through trusted AI">
   <!-- HERO SECTION -->
-  <section class="relative overflow-hidden bg-stone-50 pt-16 pb-24 lg:pt-32 lg:pb-40">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-      
-      <div class="inline-flex items-center rounded-full bg-teal-50 px-3 py-1 text-sm font-medium text-teal-800 ring-1 ring-inset ring-teal-600/20 mb-8">
-        ✨ Transforming Mental Health Care
-      </div>
-      
-      <h1 class="mx-auto max-w-4xl text-5xl font-bold tracking-tight text-stone-900 sm:text-7xl font-display">
-        AI-assisted support designed for
-        <span class="text-teal-700 block sm:inline">real-world care</span>
+  <section class="relative overflow-hidden bg-stone-900 pt-24 pb-32 lg:pt-40 lg:pb-48 text-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
+      <h1 class="mx-auto max-w-4xl text-5xl font-bold tracking-tight sm:text-7xl font-display">
+        Empowering clinical care  
+        <span class="text-teal-400 block sm:inline">through trusted AI.</span>
       </h1>
       
-      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-stone-600">
-        A clinically integrated platform that enhances engagement, personalization, and continuity of care across healthcare systems.
+      <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-stone-300">
+        C-Mind builds evidence-based, safety-first clinical intelligence tools designed for ethical deployment within research and real-world healthcare systems.
       </p>
 
-      <div class="mt-8 flex items-center justify-center gap-4">
-        <span class="text-sm font-semibold leading-6 text-stone-500 tracking-wide uppercase bg-white px-3 py-1 rounded-md shadow-sm">
-          Evidence-informed
-        </span>
-        <span class="text-sm font-semibold leading-6 text-stone-500 tracking-wide uppercase bg-white px-3 py-1 rounded-md shadow-sm">
-          Human-centered
-        </span>
-        <span class="text-sm font-semibold leading-6 text-stone-500 tracking-wide uppercase bg-white px-3 py-1 rounded-md shadow-sm">
-          Implementation-aware
-        </span>
-      </div>
-
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="/contact" class="rounded-full bg-teal-700 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-700/20 hover:bg-teal-600 hover:shadow-xl transition-all">
-          Request Information
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/products" class="rounded-full bg-teal-600 px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-teal-500 hover:shadow-xl transition-all">
+          View Our Products
         </a>
-        <a href="/about" class="text-sm font-semibold leading-6 text-stone-900 hover:text-teal-700 transition">
-          Learn more <span aria-hidden="true">→</span>
+        <a href="/about" class="text-base font-semibold leading-6 text-stone-300 hover:text-white transition px-8 py-4">
+          Our Company <span aria-hidden="true">→</span>
         </a>
       </div>
     </div>
     
-    <!-- Decorative background elements (Abstract, no photos) -->
-    <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.teal.50),white)] opacity-60"></div>
+    <!-- Decorative background elements -->
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.teal.900),theme(colors.stone.900))] opacity-80"></div>
   </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="py-24 sm:py-32 bg-white">
+  <!-- BUSINESS OVERVIEW -->
+  <section class="py-24 sm:py-32 bg-stone-50">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">How C-Mind Works</h2>
-        <p class="mt-4 text-lg leading-8 text-stone-600">A structured approach to digital mental health support that feels personal and safe.</p>
-      </div>
-      
-      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-3">
-        <FeatureCard 
-          title="1. Structured engagement" 
-          description="Users interact with guided, AI-assisted conversations designed around evidence-based therapeutic principles."
-        />
-        <FeatureCard 
-          title="2. Adaptive support" 
-          description="Interactions adapt over time based on user needs, preferences, and readiness for change."
-        />
-        <FeatureCard 
-          title="3. Safety-first escalation" 
-          description="Human-in-the-loop safeguards support appropriate escalation to clinical or human care when needed."
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- CAN / CAN'T DO -->
-  <section class="bg-stone-50 py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center mb-16">
-        <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Scope of Capabilities</h2>
-        <p class="mt-4 text-lg text-stone-600">Understanding boundaries is key to safe deployment.</p>
-      </div>
-
-      <div class="grid gap-8 lg:grid-cols-2">
-        <!-- What it supports -->
-        <div class="rounded-3xl bg-white p-8 ring-1 ring-stone-200 shadow-sm xl:p-10">
-          <div class="flex items-center gap-x-4 border-b border-stone-100 pb-4">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-teal-50 text-teal-700">
-              <span class="text-xl">✅</span>
-            </div>
-            <h3 class="text-xl font-semibold leading-8 text-stone-900">What it supports</h3>
-          </div>
-          <ul role="list" class="mt-8 space-y-4 text-sm leading-6 text-stone-600">
-            <li class="flex gap-x-3"><span class="text-teal-600 font-bold">✔</span> Guided reflection and engagement</li>
-            <li class="flex gap-x-3"><span class="text-teal-600 font-bold">✔</span> Evidence-informed mental health support</li>
-            <li class="flex gap-x-3"><span class="text-teal-600 font-bold">✔</span> Continuity between care interactions</li>
-            <li class="flex gap-x-3"><span class="text-teal-600 font-bold">✔</span> Research and pilot use cases</li>
-          </ul>
-        </div>
-
-        <!-- What it does not do -->
-        <div class="rounded-3xl bg-white p-8 ring-1 ring-stone-200 shadow-sm xl:p-10">
-          <div class="flex items-center gap-x-4 border-b border-stone-100 pb-4">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-rose-50 text-rose-700">
-              <span class="text-xl">🛑</span>
-            </div>
-            <h3 class="text-xl font-semibold leading-8 text-stone-900">What it does NOT do</h3>
-          </div>
-          <ul role="list" class="mt-8 space-y-4 text-sm leading-6 text-stone-600">
-            <li class="flex gap-x-3"><span class="text-rose-500 font-bold">✕</span> Provide diagnoses or treatment</li>
-            <li class="flex gap-x-3"><span class="text-rose-500 font-bold">✕</span> Replace clinicians or therapists</li>
-            <li class="flex gap-x-3"><span class="text-rose-500 font-bold">✕</span> Handle emergencies or crisis care</li>
-            <li class="flex gap-x-3"><span class="text-rose-500 font-bold">✕</span> Operate outside defined safety boundaries</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PHILOSOPHY -->
-  <section class="relative isolate overflow-hidden bg-stone-900 py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center relative z-10">
-      <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Designed for Real-World Care</h2>
-        <p class="mt-6 text-lg leading-8 text-stone-300 max-w-3xl mx-auto">
-          C-Mind is built on the belief that artificial intelligence should augment—not substitute—human mental health care. 
-          The platform is designed for ethical deployment within clinical, research, and support frameworks.
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Our Philosophy</h2>
+        <p class="mt-6 text-lg leading-8 text-stone-600">
+          Artificial intelligence should augment—not substitute—human care. We develop specialized, highly-governed AI infrastructure that bridges the gap between structured clinical workflows and dynamic patient needs. 
         </p>
       </div>
+
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl text-center">
+        <a href="/products" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-base font-medium rounded-xl text-teal-800 bg-teal-100 hover:bg-teal-200 shadow-sm transition-colors">
+           Explore our Mental Health and Primary Care solutions
+        </a>
+      </div>
     </div>
   </section>
-
 </BaseLayout>
