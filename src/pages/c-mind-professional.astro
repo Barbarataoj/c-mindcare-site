@@ -1,117 +1,18 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import FeatureCard from "../components/FeatureCard.astro";
+const target = "https://pro.c-mindcare.com";
 ---
-
-<BaseLayout title="C-Mind Professional | AI-assisted mental health care">
-
-  <!-- HERO SECTION -->
-  <section class="relative overflow-hidden bg-stone-50 pt-16 pb-24 lg:pt-32 lg:pb-40">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-      
-      <div class="inline-flex items-center rounded-full bg-teal-50 px-3 py-1 text-sm font-medium text-teal-800 ring-1 ring-inset ring-teal-600/20 mb-8">
-        ✨ Transforming Mental Health Care
-      </div>
-      
-      <h1 class="mx-auto max-w-4xl text-5xl font-bold tracking-tight text-stone-900 sm:text-7xl font-display">
-        C-Mind Professional
-        <span class="text-teal-700 block mt-3 text-3xl sm:text-5xl">AI support designed for real-world care</span>
-      </h1>
-      
-      <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-stone-600">
-        A clinically integrated platform that enhances engagement, personalization, and continuity of care across healthcare systems.
-      </p>
-
-      <div class="mt-8 flex items-center justify-center gap-4">
-        <span class="text-sm font-semibold leading-6 text-stone-500 tracking-wide uppercase bg-white px-3 py-1 rounded-md shadow-sm">
-          Evidence-informed
-        </span>
-        <span class="text-sm font-semibold leading-6 text-stone-500 tracking-wide uppercase bg-white px-3 py-1 rounded-md shadow-sm">
-          Human-centered
-        </span>
-        <span class="text-sm font-semibold leading-6 text-stone-500 tracking-wide uppercase bg-white px-3 py-1 rounded-md shadow-sm">
-          Implementation-aware
-        </span>
-      </div>
-
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="/contact" class="rounded-full bg-teal-700 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-700/20 hover:bg-teal-600 hover:shadow-xl transition-all">
-          Request Information
-        </a>
-      </div>
-    </div>
-    
-    <!-- Decorative background elements (Abstract, no photos) -->
-    <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.teal.50),white)] opacity-60"></div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="py-24 sm:py-32 bg-white">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">How It Works</h2>
-        <p class="mt-4 text-lg leading-8 text-stone-600">A structured approach to digital mental health support that feels personal and safe.</p>
-      </div>
-      
-      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-3">
-        <FeatureCard 
-          title="1. Structured engagement" 
-          description="Users interact with guided, AI-assisted conversations designed around evidence-based therapeutic principles."
-        />
-        <FeatureCard 
-          title="2. Adaptive support" 
-          description="Interactions adapt over time based on user needs, preferences, and readiness for change."
-        />
-        <FeatureCard 
-          title="3. Safety-first escalation" 
-          description="Human-in-the-loop safeguards support appropriate escalation to clinical or human care when needed."
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- CAN / CAN'T DO -->
-  <section class="bg-stone-50 py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center mb-16">
-        <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Scope of Capabilities</h2>
-        <p class="mt-4 text-lg text-stone-600">Understanding boundaries is key to safe deployment.</p>
-      </div>
-
-      <div class="grid gap-8 lg:grid-cols-2">
-        <!-- What it supports -->
-        <div class="rounded-3xl bg-white p-8 ring-1 ring-stone-200 shadow-sm xl:p-10">
-          <div class="flex items-center gap-x-4 border-b border-stone-100 pb-4">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-teal-50 text-teal-700">
-              <span class="text-xl">✅</span>
-            </div>
-            <h3 class="text-xl font-semibold leading-8 text-stone-900">What it supports</h3>
-          </div>
-          <ul role="list" class="mt-8 space-y-4 text-sm leading-6 text-stone-600">
-            <li class="flex gap-x-3"><span class="text-teal-600 font-bold">✔</span> Guided reflection and engagement</li>
-            <li class="flex gap-x-3"><span class="text-teal-600 font-bold">✔</span> Evidence-informed mental health support</li>
-            <li class="flex gap-x-3"><span class="text-teal-600 font-bold">✔</span> Continuity between care interactions</li>
-            <li class="flex gap-x-3"><span class="text-teal-600 font-bold">✔</span> Research and pilot use cases</li>
-          </ul>
-        </div>
-
-        <!-- What it does not do -->
-        <div class="rounded-3xl bg-white p-8 ring-1 ring-stone-200 shadow-sm xl:p-10">
-          <div class="flex items-center gap-x-4 border-b border-stone-100 pb-4">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-rose-50 text-rose-700">
-              <span class="text-xl">🛑</span>
-            </div>
-            <h3 class="text-xl font-semibold leading-8 text-stone-900">What it does NOT do</h3>
-          </div>
-          <ul role="list" class="mt-8 space-y-4 text-sm leading-6 text-stone-600">
-            <li class="flex gap-x-3"><span class="text-rose-500 font-bold">✕</span> Provide diagnoses or treatment</li>
-            <li class="flex gap-x-3"><span class="text-rose-500 font-bold">✕</span> Replace clinicians or therapists</li>
-            <li class="flex gap-x-3"><span class="text-rose-500 font-bold">✕</span> Handle emergencies or crisis care</li>
-            <li class="flex gap-x-3"><span class="text-rose-500 font-bold">✕</span> Operate outside defined safety boundaries</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</BaseLayout>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting to C-Mind Professional</title>
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={target} />
+    <script is:inline define:vars={{ target }}>
+      window.location.replace(target);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href={target}>{target}</a>…</p>
+  </body>
+</html>
